@@ -3,39 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Você foi convidado! 15 Anos de Manuela</title>
+<title>Baile de Máscaras — 15 Anos de Manuela</title>
 
-<!-- SEO e prévia de compartilhamento (WhatsApp, Facebook e outras redes) -->
-<meta name="description" content="Você foi convidado! 15 Anos de Manuela — Baile de Máscaras, 05 de Dezembro, às 18h30.">
-<link rel="canonical" href="https://franciscodevfuture.github.io/Aniversario_Manuela/">
-
+<!-- Prévia ao compartilhar (WhatsApp, Instagram, etc.) -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://franciscodevfuture.github.io/Aniversario_Manuela/">
-<meta property="og:site_name" content="15 Anos de Manuela">
-<meta property="og:locale" content="pt_BR">
-<meta property="og:title" content="Você foi convidado! 15 Anos de Manuela">
-<meta property="og:description" content="Baile de Máscaras • 05 de Dezembro, às 18h30.">
-<meta property="og:image" content="https://franciscodevfuture.github.io/Aniversario_Manuela/assets/preview-og.jpg">
-<meta property="og:image:url" content="https://franciscodevfuture.github.io/Aniversario_Manuela/assets/preview-og.jpg">
-<meta property="og:image:secure_url" content="https://franciscodevfuture.github.io/Aniversario_Manuela/assets/preview-og.jpg">
-<meta property="og:image:type" content="image/jpeg">
+<meta property="og:url" content="https://franciscodevfuture.github.io/Aniversario-Manuela/">
+<meta property="og:title" content="Baile de Máscaras — 15 Anos de Manuela">
+<meta property="og:description" content="Você está convidado(a) para o Baile de Máscaras dos 15 anos de Manuela — 05 de Dezembro, às 18h30.">
+<meta property="og:image" content="https://franciscodevfuture.github.io/Aniversario-Manuela/assets/preview-og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Convite de 15 anos de Manuela — Baile de Máscaras">
-
-<!-- Compatibilidade com clientes que usam Twitter Cards -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Você foi convidado! 15 Anos de Manuela">
-<meta name="twitter:description" content="Baile de Máscaras • 05 de Dezembro, às 18h30.">
-<meta name="twitter:image" content="https://franciscodevfuture.github.io/Aniversario_Manuela/assets/preview-og.jpg">
-<meta name="twitter:image:alt" content="Convite de 15 anos de Manuela — Baile de Máscaras">
+<meta name="twitter:title" content="Baile de Máscaras — 15 Anos de Manuela">
+<meta name="twitter:description" content="Você está convidado(a) para o Baile de Máscaras dos 15 anos de Manuela — 05 de Dezembro, às 18h30.">
+<meta name="twitter:image" content="https://franciscodevfuture.github.io/Aniversario-Manuela/assets/preview-og.jpg">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&display=swap');
 
 :root{
   --bg:#0b0705;
-  --bg-panel:rgba(21,12,10,0.92);
-  --bg-panel-alt:rgba(11,7,5,0.94);
+  --bg-panel:rgba(21,12,10,0.84);
+  --bg-panel-alt:rgba(11,7,5,0.87);
   --red:#7a0c1e;
   --red-bright:#b3122b;
   --gold:#cda349;
@@ -58,6 +46,18 @@ body{
   font-family:var(--body);
   overflow-x:hidden;
   position:relative;
+}
+
+.bg-photo{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  background-image:
+    linear-gradient(180deg, rgba(11,7,5,.55) 0%, rgba(11,7,5,.8) 45%, rgba(11,7,5,.96) 100%),
+    url('assets/bg-mascaras.jpg');
+  background-size:cover, cover;
+  background-position:center, center top;
+  background-repeat:no-repeat, no-repeat;
 }
 
 /* ---------- Ambient sparkle layer ---------- */
@@ -488,6 +488,7 @@ footer{
 </head>
 <body>
 
+<div class="bg-photo" aria-hidden="true"></div>
 <div class="frame-line" aria-hidden="true"></div>
 <div class="sparkles" id="sparkles" aria-hidden="true"></div>
 
