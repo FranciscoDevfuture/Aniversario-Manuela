@@ -22,8 +22,8 @@
 
 :root{
   --bg:#0b0705;
-  --bg-panel:rgba(21,12,10,0.84);
-  --bg-panel-alt:rgba(11,7,5,0.87);
+  --bg-panel:rgba(21,12,10,0.42);
+  --bg-panel-alt:rgba(11,7,5,0.48);
   --red:#7a0c1e;
   --red-bright:#b3122b;
   --gold:#cda349;
@@ -31,6 +31,7 @@
   --cream:#ece2c9;
   --cream-dim:#b9ab8a;
   --line:rgba(205,163,73,0.35);
+  --bg-thin:rgba(11,7,5,0.32);
   --display:'Cinzel', serif;
   --script:'Pinyon Script', cursive;
   --body:'Cormorant Garamond', serif;
@@ -227,7 +228,7 @@ main, header, footer{position:relative; z-index:1;}
 
 /* ---------- Portrait ---------- */
 .portrait{
-  background:var(--bg);
+  background:var(--bg-thin);
   text-align:center;
   padding:1rem 6vw 4rem;
 }
@@ -313,7 +314,7 @@ main, header, footer{position:relative; z-index:1;}
 
 /* ---------- Countdown ---------- */
 .countdown{
-  background:var(--bg);
+  background:var(--bg-thin);
   text-align:center;
   padding:1rem 6vw 4rem;
 }
@@ -470,7 +471,7 @@ main, header, footer{position:relative; z-index:1;}
 footer{
   text-align:center;
   padding:3rem 6vw 3.5rem;
-  background:var(--bg);
+  background:var(--bg-thin);
 }
 .signoff{
   font-family:var(--script);
