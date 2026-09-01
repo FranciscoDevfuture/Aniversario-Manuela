@@ -42,23 +42,17 @@
 html{scroll-behavior:smooth;}
 
 body{
-  background:var(--bg);
-  color:var(--cream);
-  font-family:var(--body);
-  overflow-x:hidden;
-  position:relative;
-}
-
-.bg-photo{
-  position:fixed;
-  inset:0;
-  z-index:-1;
+  background-color:var(--bg);
   background-image:
     linear-gradient(180deg, rgba(11,7,5,.4) 0%, rgba(11,7,5,.62) 45%, rgba(11,7,5,.82) 100%),
     url('assets/bg-mascaras.jpg');
   background-size:cover, cover;
-  background-position:center, center top;
+  background-position:center top, center top;
   background-repeat:no-repeat, no-repeat;
+  color:var(--cream);
+  font-family:var(--body);
+  overflow-x:hidden;
+  position:relative;
 }
 
 /* ---------- Ambient sparkle layer ---------- */
@@ -484,7 +478,6 @@ footer{
 </head>
 <body>
 
-<div class="bg-photo" aria-hidden="true"></div>
 <div class="frame-line" aria-hidden="true"></div>
 <div class="sparkles" id="sparkles" aria-hidden="true"></div>
 
